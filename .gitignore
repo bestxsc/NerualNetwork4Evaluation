@@ -3,3 +3,4 @@ __pycache__
 scores.txt
 details.txt
 format_scores.txt
+*.csv

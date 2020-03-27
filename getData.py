@@ -22,7 +22,7 @@ def myFormat(row):
         L.append(str)
     return L
 
-with open('实验数据.csv',encoding='utf-8') as f, open('details.txt','w',encoding='utf-8') as fd, open('scores.txt','w',encoding='utf-8') as fs:
+with open('datas.csv',encoding='GBK') as f, open('details.txt','w',encoding='utf-8') as fd, open('scores.txt','w',encoding='utf-8') as fs:
     reader = csv.reader(f)
     score = ['[']
     for row in reader:
@@ -42,7 +42,7 @@ with open('实验数据.csv',encoding='utf-8') as f, open('details.txt','w',enco
         fd.writelines(writeList)
         str = L[10]
         strlen = len(str)
-        score.append(str[0:strlen - 1])
+        score.append(str[0:strlen-1])
         score.append(',')
     lscore = len(score)
     fs.writelines(score[0:(lscore-1)])
