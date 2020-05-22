@@ -25,3 +25,11 @@ The test data have been provided in the root of the project, which comes from a 
 我们可以丢到pycharm里面运行runMe.py或者在命令行里自己敲上边英文版里写了的命令=-=
 
 测试数据已经提供，已经脱敏，数据来源为某知名OJ系统.
+
+##  About Test Data
+
+If you need test data, you can send a request to 'xsc@xsclymj.com'. I'll reply your email with test data.
+
+## 关于测试数据
+
+如果你要测试数据，就发个邮件找我要 'xsc@xsclymj.com'，我会在回信中把测试数据给你。拒绝骚扰，谢谢
