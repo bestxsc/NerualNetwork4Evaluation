@@ -1,6 +1,4 @@
 __pycache__
 .idea
-scores.txt
-details.txt
-format_scores.txt
+*.txt
 *.csv

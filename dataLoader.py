@@ -1,9 +1,10 @@
+# -*- encoding: utf-8 -*-
+# @MoudleName: dataLoader.py
+# @Function : Sorting the data for NN
+# @Author : XsC
+# @Time : 2020/04/18 08:25
 """
-mnist_loader.py
-~~~~~~~~~~~~
-
 加载数据的库。
-
 """
 
 #### Libraries
@@ -13,6 +14,7 @@ import gzip
 
 # Third-party libraries
 import numpy as np
+
 
 def load_data():
     """
@@ -24,12 +26,13 @@ def load_data():
     这是一种很好的数据格式，但是对于神经网络来说，稍微修改一下“训练数据”的格式是有帮助的。
     这是在包装函数“load_data_wrapper（）”中完成的，请参见下文。
     """
-    details = np.loadtxt('details.txt',dtype=int,delimiter=',')
-    scores = np.loadtxt('format_scores.txt',dtype=int,delimiter=',')
-    training_data = (details,scores)
+    details = np.loadtxt('details.txt', dtype=int, delimiter=',')
+    scores = np.loadtxt('format_scores.txt', dtype=int, delimiter=',')
+    training_data = (details, scores)
     validation_data = training_data
     test_data = training_data
     return (training_data, validation_data, test_data)
+
 
 def load_data_wrapper():
     """
@@ -52,6 +55,7 @@ def load_data_wrapper():
     test_inputs = [np.reshape(x, (14, 1)) for x in te_d[0]]
     test_data = zip(test_inputs, te_d[1])
     return (training_data, validation_data, test_data)
+
 
 def vectorized_result(j):
     """
